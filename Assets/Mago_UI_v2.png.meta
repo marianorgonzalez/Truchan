@@ -1,0 +1,649 @@
+fileFormatVersion: 2
+guid: 9f88278ad73f88d4d9690d262d82c1d8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1332227820384820098
+    second: Mago_UI_v2_0
+  - first:
+      213: 5990913000170430015
+    second: Mago_UI_v2_1
+  - first:
+      213: 7279726529124005916
+    second: Mago_UI_v2_2
+  - first:
+      213: -1875429340545130497
+    second: Mago_UI_v2_3
+  - first:
+      213: 6171476882230744786
+    second: Mago_UI_v2_4
+  - first:
+      213: -5384112201407643314
+    second: Mago_UI_v2_5
+  - first:
+      213: -3075263998264395141
+    second: Mago_UI_v2_6
+  - first:
+      213: -7299752146892003518
+    second: Mago_UI_v2_7
+  - first:
+      213: 3374003836052823141
+    second: Mago_UI_v2_8
+  - first:
+      213: 4613277155884919166
+    second: Mago_UI_v2_9
+  - first:
+      213: 7883962799651417472
+    second: Mago_UI_v2_10
+  - first:
+      213: 6960694398610775490
+    second: Mago_UI_v2_11
+  - first:
+      213: -129103179586291019
+    second: Mago_UI_v2_12
+  - first:
+      213: -3619698432328450326
+    second: Mago_UI_v2_13
+  - first:
+      213: -7933771559854744524
+    second: Mago_UI_v2_14
+  - first:
+      213: -124245902873839872
+    second: Mago_UI_v2_15
+  - first:
+      213: -7296624338718533979
+    second: Mago_UI_v2_16
+  - first:
+      213: 8520353894691768701
+    second: Mago_UI_v2_17
+  - first:
+      213: 3497421980129110623
+    second: Mago_UI_v2_18
+  - first:
+      213: 8497414358701915626
+    second: Mago_UI_v2_19
+  - first:
+      213: -5562338293902082308
+    second: Mago_UI_v2_20
+  - first:
+      213: -8125396072592577425
+    second: Mago_UI_v2_21
+  - first:
+      213: -3762220641795791127
+    second: Mago_UI_v2_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fondo_Mago
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 719
+        width: 285
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e74e1161bd9f28de0800000000000000
+      internalID: -1332227820384820098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo_Barra_Vida
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 814
+        width: 396
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3e9d67e1aff32350800000000000000
+      internalID: 5990913000170430015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exclamacion_1
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 842
+        width: 77
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c187c6665b8c60560800000000000000
+      internalID: 7279726529124005916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Estrella
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 833
+        width: 71
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d616e8c68d75a550800000000000000
+      internalID: 6171476882230744786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barra_Vida
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 687
+        width: 360
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e414044aa7ac745b0800000000000000
+      internalID: -5384112201407643314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exclamacion_2
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 615
+        width: 103
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2476b10291212ba90800000000000000
+      internalID: -7299752146892003518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rayito
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 631
+        width: 150
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56cdbb6dc9ed2de20800000000000000
+      internalID: 3374003836052823141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fondo_Tecla
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 593
+        width: 100
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e79e1fe8127a50040800000000000000
+      internalID: 4613277155884919166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flecha_Izquierda
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 632
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cd1f3b1daa599060800000000000000
+      internalID: 6960694398610775490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flecha_Derecha
+      rect:
+        serializedVersion: 2
+        x: 1483
+        y: 633
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bab2699755553ef0800000000000000
+      internalID: -129103179586291019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flecha_Arriba
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 631
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee360b247f34cdc0800000000000000
+      internalID: -3619698432328450326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flecha_Abajo
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 626
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43cd2cd1dc495e190800000000000000
+      internalID: -7933771559854744524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 556
+        width: 54
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00738667207964ef0800000000000000
+      internalID: -124245902873839872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 553
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a65637b2de2dba90800000000000000
+      internalID: -7296624338718533979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 549
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7908b579b06e3670800000000000000
+      internalID: 8520353894691768701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 552
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a2d33c2c6598030800000000000000
+      internalID: 3497421980129110623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mago_Canchero
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 13
+        width: 198
+        height: 339
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aed3bb78651ece570800000000000000
+      internalID: 8497414358701915626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mago_Frustrado
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 7
+        width: 175
+        height: 337
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfef96fcaca9ec2b0800000000000000
+      internalID: -5562338293902082308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mago_Tenso
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 11
+        width: 191
+        height: 359
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6ce3c9725bcc3f80800000000000000
+      internalID: -8125396072592577425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mago_Troste
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 52
+        width: 276
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e6ae176248e9cbc0800000000000000
+      internalID: -3762220641795791127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2834f1ba9f4c1c54b8473af669862370
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      A: -7296624338718533979
+      Barra_Vida: -5384112201407643314
+      D: 3497421980129110623
+      Estrella: 6171476882230744786
+      Exclamacion_1: 7279726529124005916
+      Exclamacion_2: -7299752146892003518
+      Flecha_Abajo: -7933771559854744524
+      Flecha_Arriba: -3619698432328450326
+      Flecha_Derecha: -129103179586291019
+      Flecha_Izquierda: 6960694398610775490
+      Fondo_Barra_Vida: 5990913000170430015
+      Fondo_Mago: -1332227820384820098
+      Fondo_Tecla: 4613277155884919166
+      Mago_Canchero: 8497414358701915626
+      Mago_Frustrado: -5562338293902082308
+      Mago_Tenso: -8125396072592577425
+      Mago_Troste: -3762220641795791127
+      Mago_UI_v2_10: 7883962799651417472
+      Mago_UI_v2_3: -1875429340545130497
+      Mago_UI_v2_6: -3075263998264395141
+      Rayito: 3374003836052823141
+      S: 8520353894691768701
+      W: -124245902873839872
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
