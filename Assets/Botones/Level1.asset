@@ -16,7 +16,7 @@ MonoBehaviour:
   - spawnRandomButtons: 1
     randomButtonAmount: 3
     specificButtons: []
-    timeToPressAllButtons: 8
+    timeToPressAllButtons: 12
     timeUntilNextWave: 6
     buttonDamage: 10
   - spawnRandomButtons: 1
