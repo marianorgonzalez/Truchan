@@ -17,6 +17,7 @@ public class ButtonDestroyer : MonoBehaviour
   [SerializeField] float buttonDestroyedSpriteDuration = 0.4f;
   float lastDamageTime = Mathf.NegativeInfinity;
   float spriteResetTime = Mathf.NegativeInfinity;
+    [SerializeField] Animator anim;
 
   private void Awake()
   {
@@ -45,12 +46,15 @@ public class ButtonDestroyer : MonoBehaviour
             foreach(var button in buttonsWithKey)
             {
               button.OnPressed();
-              hands.sprite = buttonDestroySprite;
+
+                            anim.SetTrigger("magic");
+                            hands.sprite = buttonDestroySprite;
               spriteResetTime = Time.time + buttonDestroyedSpriteDuration;
             }
           }
           else if (Time.time - lastDamageTime > invulnerabilityTime)
           {
+                        anim.SetTrigger("damage");
             Utilities.DealDamageToPlayer(wrongButtonPressedDamage);
             lastDamageTime = Time.time;
             hands.sprite = damageReceivedSprite;

@@ -8,10 +8,15 @@ public class TruchanButton : MonoBehaviour
   float timeCreated;
   [HideInInspector] public int damage;
 
+    public Animator anim;
+    public ParticleSystem pressParticle;
+
   private void Awake()
   {
     timeCreated = Time.time;
-  }
+        if (anim == null)
+            anim = GetComponent<Animator>();
+    }
   private void Update()
   {
     if (Time.time - timeCreated > duration)
@@ -22,6 +27,8 @@ public class TruchanButton : MonoBehaviour
   }
   public void OnPressed()
   {
-    Destroy(gameObject);
+        anim.SetTrigger("pressDissapear");
+        pressParticle.Play();
+        Destroy(gameObject, 1f);
   }
 }

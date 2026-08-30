@@ -563,6 +563,7 @@ GameObject:
   - component: {fileID: 289813421}
   - component: {fileID: 289813423}
   - component: {fileID: 289813422}
+  - component: {fileID: 289813424}
   m_Layer: 5
   m_Name: Manos
   m_TagString: Untagged
@@ -588,7 +589,7 @@ RectTransform:
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &289813422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -611,7 +612,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 7225b2fd25a9ded4b8e692358df69d74, type: 3}
   m_Type: 0
-  m_PreserveAspect: 1
+  m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -627,6 +628,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 289813420}
   m_CullTransparentMesh: 1
+--- !u!95 &289813424
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289813420}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: de2e842f0c289d64c977fd389ebadac4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &319777594
 GameObject:
   m_ObjectHideFlags: 0
@@ -2628,7 +2651,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 633.21, y: -150.24}
+  m_AnchoredPosition: {x: 633.21, y: -150.23999}
   m_SizeDelta: {x: 525.43, y: 95.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1462281546
@@ -3979,7 +4002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03c5c6167f092ca4d9abd2a031cd1cad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  wrongButtonPressedDamage: 10
+  wrongButtonPressedDamage: 5
   invulnerabilityTime: 1
   hands: {fileID: 289813422}
   defaultSprite: {fileID: 21300000, guid: 7225b2fd25a9ded4b8e692358df69d74, type: 3}
@@ -3987,6 +4010,7 @@ MonoBehaviour:
   damageReceivedSprite: {fileID: 21300000, guid: 06bf03bfe65afd84aa4d120005e82cc7, type: 3}
   damageReceivedSpriteDuration: 0.7
   buttonDestroyedSpriteDuration: 0.4
+  anim: {fileID: 289813424}
 --- !u!4 &1954055818
 Transform:
   m_ObjectHideFlags: 0
