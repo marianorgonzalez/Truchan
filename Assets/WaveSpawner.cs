@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class WaveSpawner : MonoBehaviour
 {
-  [SerializeField] List<ButtonWave> waves;
-  [SerializeField] BoxCollider2D spawnZone1;
-  [SerializeField] BoxCollider2D spawnZone2;
+  [SerializeField] ButtonWaveCollection wavesCollection;
+  [SerializeField] List<BoxCollider2D> buttonSpawnZones;
   float lastWaveTime = Mathf.NegativeInfinity;
   int currentWave = 0;
+  List<ButtonWave> waves;
   [SerializeField] List<TruchanButton> randomButtonPool;
+
+  private void Awake()
+  {
+    waves = wavesCollection.waves;
+  }
+
   private void Update()
   {
     if (Time.time - lastWaveTime > waves[currentWave].timeUntilNextWave)
@@ -24,7 +30,8 @@ public class WaveSpawner : MonoBehaviour
 
   private void OnWavesFinished()
   {
-    currentWave = 0;
+    Debug.Break();
+    Debug.Log("Level finished!");
   }
 
   private void SpawnButtonWave(ButtonWave buttonWave)
@@ -62,14 +69,7 @@ public class WaveSpawner : MonoBehaviour
     int iterations = 0;
     while (iterations < 15 && IsButtonOverlappingOtherButtons(spawnedButton))
     {
-      if (Random.Range(0, 101) > 50)
-      {
-        spawnedButton.transform.position = GetRandomPositionInBounds(spawnZone1.bounds);
-      }
-      else
-      {
-        spawnedButton.transform.position = GetRandomPositionInBounds(spawnZone2.bounds);
-      }
+      spawnedButton.transform.position = GetRandomPositionInBounds(buttonSpawnZones[Random.Range(0, buttonSpawnZones.Count)].bounds);
       iterations++;
     }
     if (iterations == 15)
@@ -85,7 +85,6 @@ public class WaveSpawner : MonoBehaviour
       var buttonInSceneSprite = buttonInScene.GetComponent<SpriteRenderer>();
       if (sprite.bounds.Intersects(buttonInSceneSprite.bounds))
       {
-        Debug.Log("Solapamiento");
         return true;
       }
     }
