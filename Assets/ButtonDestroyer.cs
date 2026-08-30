@@ -3,6 +3,7 @@ using System;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class ButtonDestroyer : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class ButtonDestroyer : MonoBehaviour
   [SerializeField] float invulnerabilityTime = 1f;
   [SerializeField] Image hands;
   [SerializeField] Sprite defaultSprite;
-  [SerializeField] Sprite buttonDestroySprite;
+  [SerializeField] Sprite[] buttonDestroySprite;
   [SerializeField] Sprite damageReceivedSprite;
   [SerializeField] float damageReceivedSpriteDuration = 0.7f;
   [SerializeField] float buttonDestroyedSpriteDuration = 0.4f;
@@ -48,7 +49,7 @@ public class ButtonDestroyer : MonoBehaviour
               button.OnPressed();
 
                             anim.SetTrigger("magic");
-                            hands.sprite = buttonDestroySprite;
+                            hands.sprite = buttonDestroySprite[Random.Range(0, buttonDestroySprite.Length)] ;
               spriteResetTime = Time.time + buttonDestroyedSpriteDuration;
             }
           }

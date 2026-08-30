@@ -25,10 +25,12 @@ public class TruchanButton : MonoBehaviour
       Destroy(gameObject);
     }
   }
-  public void OnPressed()
-  {
+    public void OnPressed()
+    {
         anim.SetTrigger("pressDissapear");
+        pressParticle.transform.SetParent(null);
         pressParticle.Play();
-        Destroy(gameObject, 1f);
+        Destroy(pressParticle, 2.5f);
+        Destroy(gameObject, .5f);
   }
 }
