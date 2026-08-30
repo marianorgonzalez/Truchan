@@ -17,7 +17,7 @@ public class TruchanButton : MonoBehaviour
         if (anim == null)
             anim = GetComponent<Animator>();
     }
-  private void Update()
+  private virtual void Update()
   {
     if (Time.time - timeCreated > duration)
     {
@@ -25,7 +25,7 @@ public class TruchanButton : MonoBehaviour
       Destroy(gameObject);
     }
   }
-    public void OnPressed()
+    public virtual void OnPressed()
     {
         anim.SetTrigger("pressDissapear");
         pressParticle.transform.SetParent(null);
