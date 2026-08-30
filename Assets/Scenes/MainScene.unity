@@ -309,7 +309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feac62beb7208054d9a97a5df327d8fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  wavesCollection: {fileID: 11400000, guid: 39d8bb4dc1de1a44a98b51a702ab9f28, type: 2}
+  wavesCollection: {fileID: 11400000, guid: d4adcd861b93cb74ebffe9bffff379c2, type: 2}
   buttonSpawnZones:
   - {fileID: 1682385398}
   - {fileID: 610496822}

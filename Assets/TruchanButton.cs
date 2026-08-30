@@ -17,7 +17,7 @@ public class TruchanButton : MonoBehaviour
         if (anim == null)
             anim = GetComponent<Animator>();
     }
-  private virtual void Update()
+  protected virtual void Update()
   {
     if (Time.time - timeCreated > duration)
     {
