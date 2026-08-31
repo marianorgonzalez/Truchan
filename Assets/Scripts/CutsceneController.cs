@@ -10,8 +10,10 @@ public class CutsceneController : MonoBehaviour
   [SerializeField] float timeToSkip = 2f;
   [SerializeField] TextMeshProUGUI skipText;
   [SerializeField] float timeToHideSkipTextAfterShowing = 4f;
+    [SerializeField] bool canReset = false;
   private bool finished;
   float skipTimer = 0;
+    float resetTimer = 0;
   float hideTimer = 0;
   private void Awake()
   {
@@ -29,9 +31,13 @@ public class CutsceneController : MonoBehaviour
     if (Input.GetKey(KeyCode.S))
     {
       skipTimer += Time.deltaTime;
-    }
+    }if (Input.GetKey(KeyCode.R) && canReset)
+        {
+            resetTimer += Time.deltaTime;
+        }
     else
     {
+            resetTimer = 0;
       skipTimer = 0;
     }
     if (Input.anyKeyDown)
@@ -47,6 +53,10 @@ public class CutsceneController : MonoBehaviour
     {
       Skip();
     }
+    if(resetTimer >= timeToSkip)
+        {
+            SceneManager.LoadScene("MainScene");
+        }
   }
 
   private void OnVideoFinished(VideoPlayer player)
