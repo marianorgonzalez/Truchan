@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ButtonWaveCollection
   waves:
   - spawnRandomButtons: 1
-    randomButtonAmount: 3
+    randomButtonAmount: 8
     specificButtons: []
     timeToPressAllButtons: 8
     timeUntilNextWave: 2

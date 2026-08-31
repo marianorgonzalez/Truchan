@@ -131,7 +131,7 @@ AnimationClip:
     - time: 0.5833333
       value: {fileID: -5859324170470884216, guid: edb05682fa29ff9428f27fccfce5ee82, type: 3}
     - time: 1
-      value: {fileID: 3924162224760600842, guid: edb05682fa29ff9428f27fccfce5ee82, type: 3}
+      value: {fileID: -5859324170470884216, guid: edb05682fa29ff9428f27fccfce5ee82, type: 3}
     attribute: m_Sprite
     path: Mujer
     classID: 212
@@ -195,7 +195,7 @@ AnimationClip:
     - {fileID: -1721052448088003123, guid: b782b52280c54e242a35761dcceacd5b, type: 3}
     - {fileID: 3924162224760600842, guid: edb05682fa29ff9428f27fccfce5ee82, type: 3}
     - {fileID: -5859324170470884216, guid: edb05682fa29ff9428f27fccfce5ee82, type: 3}
-    - {fileID: 3924162224760600842, guid: edb05682fa29ff9428f27fccfce5ee82, type: 3}
+    - {fileID: -5859324170470884216, guid: edb05682fa29ff9428f27fccfce5ee82, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

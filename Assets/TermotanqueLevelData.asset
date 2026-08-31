@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d97a251f5ae122a45bf0a22eee6e6497, type: 3}
-  m_Name: LevitacionLevelData
+  m_Name: TermotanqueLevelData
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   music: {fileID: 8300000, guid: 86cef33476de41d4f99873fce6455d55, type: 3}
-  waves: {fileID: 11400000, guid: b5ab3c4300836dc4ab7dbfa73b5391ae, type: 2}
-  truchanPrefab: {fileID: 8863250310455121892, guid: 2698923741d7ab3429dca1edc3d9260b, type: 3}
-  nextLevel: {fileID: 11400000, guid: 263a8da3459b6e7429ee8b1a5a331f64, type: 2}
+  waves: {fileID: 11400000, guid: 8b1ece4e64b764e4a8d7905b981c9b4b, type: 2}
+  truchanPrefab: {fileID: 1364778150357362501, guid: 4ce511f8919b68540aa970e559c6718c, type: 3}
+  nextLevel: {fileID: 0}
