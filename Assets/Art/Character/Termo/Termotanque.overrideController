@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Termotanque
+  m_Controller: {fileID: 9100000, guid: 00fa447403b305d4c872392e46128e9a, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 06dd4525a88b2f94b92787059433f5d7, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4a26ccc8483a2ff4987ab0c60af5e6d8, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 05c248d9fb3c8f44aae986472c983861, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 01ac06ca971099c4c8a6fae8a8af7c84, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 77c94b1ada9f395438f1611756ba740f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: be564df594088c240a41e14ccd0a0678, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1ac2143afdaf80f47a6d84569daedc79, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 00bf1bcece65ca646ac7b65eebaeb075, type: 2}
