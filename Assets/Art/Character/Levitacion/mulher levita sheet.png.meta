@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 5c8edcd11ec7c3c4cba6817866fe8ec3
+guid: edb05682fa29ff9428f27fccfce5ee82
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 198950292056382577
-    second: truchan triunfa levitando_0
+      213: -3296170436939441837
+    second: mulher levita sheet_0
+  - first:
+      213: 3924162224760600842
+    second: mulher levita sheet_1
+  - first:
+      213: 8848397593256149011
+    second: mulher levita sheet_2
+  - first:
+      213: 1143077777332250360
+    second: mulher levita sheet_3
+  - first:
+      213: -5859324170470884216
+    second: mulher levita sheet_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +138,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: truchan triunfa levitando_0
+      name: mulher levita sheet_0
       rect:
         serializedVersion: 2
-        x: 707
-        y: 423
-        width: 506
-        height: 525
+        x: 81
+        y: 737
+        width: 748
+        height: 212
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +153,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 17c1bfd8c30d2c200800000000000000
-      internalID: 198950292056382577
+      spriteID: 35994139376a142d0800000000000000
+      internalID: -3296170436939441837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mulher levita sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 598
+        width: 748
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a09bcd790cc657630800000000000000
+      internalID: 3924162224760600842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mulher levita sheet_2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 448
+        width: 745
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3104471fab2dbca70800000000000000
+      internalID: 8848397593256149011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mulher levita sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 261
+        width: 726
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f62884ae270ddf00800000000000000
+      internalID: 1143077777332250360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mulher levita sheet_4
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 189
+        width: 691
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88cf83306bf7faea0800000000000000
+      internalID: -5859324170470884216
       vertices: []
       indices: 
       edges: []
@@ -161,7 +261,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      truchan triunfa levitando_0: 198950292056382577
+      mulher levita sheet_0: -3296170436939441837
+      mulher levita sheet_1: 3924162224760600842
+      mulher levita sheet_2: 8848397593256149011
+      mulher levita sheet_3: 1143077777332250360
+      mulher levita sheet_4: -5859324170470884216
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

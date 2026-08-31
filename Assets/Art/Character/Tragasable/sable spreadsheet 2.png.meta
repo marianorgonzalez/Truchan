@@ -1,28 +1,22 @@
 fileFormatVersion: 2
-guid: 2c273c249239883438ae4ba22f2ded9d
+guid: 14c2b14ebea6d9145951f287e7b1db57
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 585243954562742079
-    second: truchan se le cayo_0
+      213: -6385411529866911188
+    second: sable spreadsheet 2_0
   - first:
-      213: 1616708947522796219
-    second: truchan se le cayo_1
+      213: -2441078096146048
+    second: sable spreadsheet 2_1
   - first:
-      213: 6295340673750516072
-    second: truchan se le cayo_2
+      213: -5067530255389777423
+    second: sable spreadsheet 2_2
   - first:
-      213: 81517319984218731
-    second: truchan se le cayo_3
+      213: 2008772587793004428
+    second: sable spreadsheet 2_3
   - first:
-      213: -649928365097026390
-    second: truchan se le cayo_4
-  - first:
-      213: 8365433154970762744
-    second: truchan se le cayo_5
-  - first:
-      213: 4092122296138416434
-    second: truchan se le cayo_6
+      213: 8457507296181537641
+    second: sable spreadsheet 2_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -144,23 +138,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: truchan se le cayo_6
+      name: sable spreadsheet 2_0
       rect:
         serializedVersion: 2
-        x: 733
-        y: 425
-        width: 454
-        height: 630
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 75
+        y: 58
+        width: 344
+        height: 683
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 23149ce1c832ac830800000000000000
-      internalID: 4092122296138416434
+      spriteID: c2269918b067267a0800000000000000
+      internalID: -6385411529866911188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sable spreadsheet 2_1
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 57
+        width: 319
+        height: 653
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 081d5373ad357fff0800000000000000
+      internalID: -2441078096146048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sable spreadsheet 2_2
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 57
+        width: 298
+        height: 643
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f1a2f6e4148ca9b0800000000000000
+      internalID: -5067530255389777423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sable spreadsheet 2_3
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 57
+        width: 298
+        height: 603
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c87b1f1960890eb10800000000000000
+      internalID: 2008772587793004428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sable spreadsheet 2_4
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 56
+        width: 301
+        height: 599
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96bcc2a731a1f5570800000000000000
+      internalID: 8457507296181537641
       vertices: []
       indices: 
       edges: []
@@ -169,7 +251,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 98a7001f5dd76d04197cbcc8719e0338
+    spriteID: 263bd07a305a667488fa222951160038
     internalID: 0
     vertices: []
     indices: 
@@ -179,13 +261,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      truchan se le cayo_0: 585243954562742079
-      truchan se le cayo_1: 1616708947522796219
-      truchan se le cayo_2: 6295340673750516072
-      truchan se le cayo_3: 81517319984218731
-      truchan se le cayo_4: -649928365097026390
-      truchan se le cayo_5: 8365433154970762744
-      truchan se le cayo_6: 4092122296138416434
+      sable spreadsheet 2_0: -6385411529866911188
+      sable spreadsheet 2_1: -2441078096146048
+      sable spreadsheet 2_2: -5067530255389777423
+      sable spreadsheet 2_3: 2008772587793004428
+      sable spreadsheet 2_4: 8457507296181537641
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
