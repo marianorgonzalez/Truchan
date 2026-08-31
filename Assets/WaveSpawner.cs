@@ -1,15 +1,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class WaveSpawner : MonoBehaviour
 {
   [SerializeField] ButtonWaveCollection wavesCollection;
   [SerializeField] List<BoxCollider2D> buttonSpawnZones;
-  float lastWaveTime = Mathf.NegativeInfinity;
+  float lastWaveTimer = Mathf.NegativeInfinity;
   int currentWave = 0;
   List<ButtonWave> waves;
   [SerializeField] List<TruchanButton> randomButtonPool;
+  [SerializeField] UnityEvent OnWaveFinished;
+  List<TruchanButton> currentWaveButtons = new();
 
   private void Awake()
   {
@@ -18,24 +21,22 @@ public class WaveSpawner : MonoBehaviour
 
   private void Update()
   {
-    if (Time.time - lastWaveTime > waves[currentWave].timeUntilNextWave)
+    if (currentWaveButtons.Any() == false && Time.time >= lastWaveTimer)
     {
       SpawnButtonWave(waves[currentWave]);
-      lastWaveTime = Time.time;
-      currentWave++;
-      if (currentWave == waves.Count)
-        OnWavesFinished();
     }
   }
 
-  private void OnWavesFinished()
+  private void OnAllWavesFinished()
   {
     Debug.Break();
     Debug.Log("Level finished!");
+    
   }
 
   private void SpawnButtonWave(ButtonWave buttonWave)
   {
+    currentWaveButtons = new();
     if (buttonWave.spawnRandomButtons)
     {
       List<int> spawnedButtons = new();
@@ -61,9 +62,9 @@ public class WaveSpawner : MonoBehaviour
     }
   }
 
-  private void SpawnButton(TruchanButton button)
+  private void SpawnButton(TruchanButton buttonPrefab)
   {
-    var spawnedButton = Instantiate(button);
+    var spawnedButton = Instantiate(buttonPrefab);
     spawnedButton.duration = waves[currentWave].timeToPressAllButtons;
     spawnedButton.damage = waves[currentWave].buttonDamage;
     int iterations = 0;
@@ -74,6 +75,23 @@ public class WaveSpawner : MonoBehaviour
     }
     if (iterations == 15)
       Debug.LogWarning("Iterations exceeded when spawning button");
+    currentWaveButtons.Add(spawnedButton);
+    spawnedButton.OnButtonDestroyed.AddListener(OnButtonDestroyed);
+  }
+
+  private void OnButtonDestroyed(TruchanButton obj)
+  {
+    currentWaveButtons.Remove(obj);
+    if (currentWaveButtons.Count == 0)
+    {
+      OnWaveFinished.Invoke();
+      lastWaveTimer = waves[currentWave].timeUntilNextWave + Time.time;
+      currentWave++;
+      if (currentWave >= waves.Count)
+      {
+        OnAllWavesFinished();
+      }
+    }
   }
 
   private bool IsButtonOverlappingOtherButtons(TruchanButton button)
@@ -99,5 +117,10 @@ public class WaveSpawner : MonoBehaviour
             Random.Range(bounds.min.y, bounds.max.y),
             Random.Range(bounds.min.z, bounds.max.z)
         );
+  }
+
+  private void OnButtonDestroyed()
+  {
+
   }
 }

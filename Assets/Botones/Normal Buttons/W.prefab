@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 483073181500025098}
   - component: {fileID: 5465185492187562849}
   - component: {fileID: 7650852809866906581}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: W
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,8 +82,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1567106453
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 4613277155884919166, guid: 9f88278ad73f88d4d9690d262d82c1d8, type: 3}
@@ -113,6 +113,9 @@ MonoBehaviour:
   damage: 0
   anim: {fileID: 7650852809866906581}
   pressParticle: {fileID: 1949126726340579093}
+  OnButtonDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!95 &7650852809866906581
 Animator:
   serializedVersion: 7
@@ -146,7 +149,7 @@ GameObject:
   - component: {fileID: 648985983619948663}
   - component: {fileID: 1949126726340579093}
   - component: {fileID: 5012336325830240714}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Press
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4937,8 +4940,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1567106453
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_RenderMode: 0
@@ -4983,7 +4986,7 @@ GameObject:
   - component: {fileID: 8220967124782163903}
   - component: {fileID: 191623842837654200}
   - component: {fileID: 7923097346893176529}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Appear_Par
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9782,8 +9785,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1567106453
+  m_SortingLayer: 2
   m_SortingOrder: 17
   m_MaskInteraction: 0
   m_RenderMode: 1
@@ -9827,7 +9830,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2476824907213591104}
   - component: {fileID: 55558284102052226}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sprite_W
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9894,8 +9897,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1567106453
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -124245902873839872, guid: 9f88278ad73f88d4d9690d262d82c1d8, type: 3}

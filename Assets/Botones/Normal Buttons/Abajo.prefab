@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 483073181500025098}
   - component: {fileID: 5465185492187562849}
   - component: {fileID: 875373289988619579}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Abajo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,8 +82,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1567106453
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 4613277155884919166, guid: 9f88278ad73f88d4d9690d262d82c1d8, type: 3}
@@ -113,6 +113,9 @@ MonoBehaviour:
   damage: 0
   anim: {fileID: 875373289988619579}
   pressParticle: {fileID: 4428427945236387400}
+  OnButtonDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!95 &875373289988619579
 Animator:
   serializedVersion: 7
@@ -146,7 +149,7 @@ GameObject:
   - component: {fileID: 1716620498362025435}
   - component: {fileID: 3942650501411280843}
   - component: {fileID: 8087132193106000672}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Appear_Par (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4945,8 +4948,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1567106453
+  m_SortingLayer: 2
   m_SortingOrder: 17
   m_MaskInteraction: 0
   m_RenderMode: 1
@@ -4991,7 +4994,7 @@ GameObject:
   - component: {fileID: 1667977530003938566}
   - component: {fileID: 4428427945236387400}
   - component: {fileID: 7233833535703581473}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Press (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9782,8 +9785,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1567106453
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_RenderMode: 0
@@ -9827,7 +9830,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2476824907213591104}
   - component: {fileID: 55558284102052226}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sprite_Abajo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9894,8 +9897,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1567106453
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -7933771559854744524, guid: 9f88278ad73f88d4d9690d262d82c1d8, type: 3}
