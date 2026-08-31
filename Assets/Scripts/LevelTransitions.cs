@@ -22,7 +22,6 @@ public class LevelTransitions : MonoBehaviour
       yield return null;
     }
     overLay.color = overlayTargetColor;
-
   }
 
   public IEnumerator TransitionIn()
