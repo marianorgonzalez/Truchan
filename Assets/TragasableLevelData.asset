@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d97a251f5ae122a45bf0a22eee6e6497, type: 3}
+  m_Name: TragasableLevelData
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  music: {fileID: 8300000, guid: 86cef33476de41d4f99873fce6455d55, type: 3}
+  waves: {fileID: 11400000, guid: 8b1ece4e64b764e4a8d7905b981c9b4b, type: 2}
+  truchanPrefab: {fileID: 8140941739354927754, guid: 4621022992669e84fb06ee778d69d166, type: 3}
+  nextLevel: {fileID: 11400000, guid: 7984ef10d5fd30141bad56ed471aae2b, type: 2}

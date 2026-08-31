@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - TruchanButtons
   - 
   - 
   - 
@@ -46,6 +46,9 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 412875111
+    locked: 0
+  - name: TruchanButtons
+    uniqueID: 1567106453
     locked: 0
   m_RenderingLayers:
   - Default

@@ -1,0 +1,116 @@
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
+using UnityEngine.Events;
+
+public class WaveSpawner : MonoBehaviour
+{
+  [SerializeField] List<BoxCollider2D> buttonSpawnZones;
+  [SerializeField] List<TruchanButton> randomButtonPool;
+  [SerializeField] public UnityEvent OnWaveFinished;
+  [SerializeField] public UnityEvent OnWaveCollectionFinished;
+  List<TruchanButton> currentWaveButtons = new();
+  [SerializeField] AudioManager audioManager;
+  bool finishedWaveCollection;
+  private void Awake()
+  {
+  }
+
+  public IEnumerator SpawnWaveCollection(ButtonWaveCollection waveCollection)
+  {
+    foreach (var wave in waveCollection.waves)
+    {
+      SpawnButtonWave(wave);
+      yield return new WaitUntil(() => currentWaveButtons.Any() == false);
+      OnWaveFinished?.Invoke();
+      yield return new WaitForSeconds(wave.timeUntilNextWave);
+    }
+    OnWaveCollectionFinished?.Invoke();
+  }
+  private void Update()
+  {
+  }
+
+  private void SpawnButtonWave(ButtonWave buttonWave)
+  {
+    currentWaveButtons = new();
+    if (buttonWave.spawnRandomButtons)
+    {
+      List<int> spawnedButtons = new();
+      for (int i = 0; i < buttonWave.randomButtonAmount; i++)
+      {
+        int? randomButtonIndex = null;
+        while (randomButtonIndex.HasValue == false || spawnedButtons.Contains(randomButtonIndex.Value))
+        {
+          randomButtonIndex = Random.Range(0, randomButtonPool.Count);
+        }
+        spawnedButtons.Add(randomButtonIndex.Value);
+        if (spawnedButtons.Count == randomButtonPool.Count)
+          spawnedButtons.Clear();
+        SpawnButton(buttonWave, randomButtonPool[randomButtonIndex.Value]);
+      }
+    }
+    else
+    {
+      foreach (var buttonPrefab in buttonWave.specificButtons)
+      {
+        SpawnButton(buttonWave, buttonPrefab);
+      }
+    }
+  }
+
+  private void SpawnButton(ButtonWave wave, TruchanButton buttonPrefab)
+  {
+    var spawnedButton = Instantiate(buttonPrefab);
+    spawnedButton.duration = wave.timeToPressAllButtons;
+    spawnedButton.damage = wave.buttonDamage;
+    int iterations = 0;
+    while (iterations < 15 && IsButtonOverlappingOtherButtons(spawnedButton))
+    {
+      spawnedButton.transform.position = GetRandomPositionInBounds(buttonSpawnZones[Random.Range(0, buttonSpawnZones.Count)].bounds);
+      iterations++;
+    }
+    if (iterations == 15)
+      Debug.LogWarning("Iterations exceeded when spawning button");
+    currentWaveButtons.Add(spawnedButton);
+    spawnedButton.OnButtonDestroyed.AddListener(OnButtonDestroyed);
+  }
+
+  private void OnButtonDestroyed(TruchanButton obj)
+  {
+    currentWaveButtons.Remove(obj);
+    audioManager.PlaySFX(obj.buttonDestroyedSound);
+ 
+  }
+
+  private bool IsButtonOverlappingOtherButtons(TruchanButton button)
+  {
+    var sprite = button.GetComponent<SpriteRenderer>();
+    var buttonsInScene = Object.FindObjectsByType<TruchanButton>(FindObjectsSortMode.InstanceID).Where(x => !x.Equals(button));
+    foreach (var buttonInScene in buttonsInScene)
+    {
+      var buttonInSceneSprite = buttonInScene.GetComponent<SpriteRenderer>();
+      if (sprite.bounds.Intersects(buttonInSceneSprite.bounds))
+      {
+        return true;
+      }
+    }
+    return false;
+  }
+
+
+  private Vector3 GetRandomPositionInBounds(Bounds bounds)
+  {
+    return new Vector3(
+            Random.Range(bounds.min.x, bounds.max.x),
+            Random.Range(bounds.min.y, bounds.max.y),
+            Random.Range(bounds.min.z, bounds.max.z)
+        );
+  }
+
+  private void OnButtonDestroyed()
+  {
+
+  }
+}

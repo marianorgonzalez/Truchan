@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3388625174358818554}
   - component: {fileID: 715837501550758532}
   - component: {fileID: 2687661936149051831}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Appear_Par (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4810,8 +4810,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1567106453
+  m_SortingLayer: 2
   m_SortingOrder: 17
   m_MaskInteraction: 0
   m_RenderMode: 1
@@ -4857,7 +4857,7 @@ GameObject:
   - component: {fileID: 483073181500025098}
   - component: {fileID: 5465185492187562849}
   - component: {fileID: 8199561784174562004}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Izquierda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4908,7 +4908,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4927,8 +4927,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1567106453
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 4613277155884919166, guid: 9f88278ad73f88d4d9690d262d82c1d8, type: 3}
@@ -4958,6 +4958,10 @@ MonoBehaviour:
   damage: 0
   anim: {fileID: 8199561784174562004}
   pressParticle: {fileID: 2906079685885574864}
+  OnButtonDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  buttonDestroyedSound: {fileID: 8300000, guid: fef707eb0c2623140a570b5ab7c0b1ea, type: 3}
 --- !u!95 &8199561784174562004
 Animator:
   serializedVersion: 7
@@ -4990,7 +4994,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2476824907213591104}
   - component: {fileID: 55558284102052226}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sprite_Izquierda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5057,8 +5061,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1567106453
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6960694398610775490, guid: 9f88278ad73f88d4d9690d262d82c1d8, type: 3}
@@ -5082,7 +5086,7 @@ GameObject:
   - component: {fileID: 4483973878463733005}
   - component: {fileID: 2906079685885574864}
   - component: {fileID: 3050495832513378302}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Press (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9873,8 +9877,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1567106453
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_RenderMode: 0

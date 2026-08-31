@@ -359,13 +359,13 @@ MonoBehaviour:
       - m_Target: {fileID: 1979397341}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: GoToMainScene
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: MainMenu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &699185475
@@ -678,8 +678,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Volver
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 64f4b50277b72434681e4516b58245fa, type: 2}
+  m_sharedMaterial: {fileID: 4819187688118396068, guid: 64f4b50277b72434681e4516b58245fa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -813,23 +813,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Productor: Lisandro Aros Bouvet
-
-    Game Design Sr: Lisandro Aros Bouvet
-
-    Game
-    Design: MakoFufu, Lola, Bender y Mariano
-
-    2D Artist: MakoFufu y Lola
-
-    UI:
-    Thordram
-
-    Audio: Bender
-
-    Sonidos extra: Rad Angie
-
-'
+  m_text: "Productor: Lisandro Aros Bouvet\nGame Design Sr: Lisandro Aros Bouvet\nGame
+    Design: Mako Fufu, Lola, Maximiliano Di Salvia y Mariano Gonzalez (Ormuz)\n2D
+    Artist: MakoFufu y Lola\nUI: Federico Ram\xEDrez (Thordram)\nProgramador: Mariano
+    Gonzalez (Ormuz)\nVideos: Mako Fufu\nAudio: Maximiliano Di Salvia\nSonidos extra:
+    Rad Angie y freesound.org"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f82638658038df843af799b81c5233b2, type: 2}
   m_sharedMaterial: {fileID: -3783543981902240135, guid: f82638658038df843af799b81c5233b2, type: 2}
@@ -856,7 +844,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 97.5
+  m_fontSize: 68.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1026,6 +1014,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c3e01ee462e390439cf35b68b0c2c2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  buttonContainer:
+  - {fileID: 699185472}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

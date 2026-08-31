@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 483073181500025098}
   - component: {fileID: 5465185492187562849}
   - component: {fileID: 8482114273358778601}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Arriba
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -82,8 +82,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1567106453
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 4613277155884919166, guid: 9f88278ad73f88d4d9690d262d82c1d8, type: 3}
@@ -113,6 +113,10 @@ MonoBehaviour:
   damage: 0
   anim: {fileID: 8482114273358778601}
   pressParticle: {fileID: 6570130124939102156}
+  OnButtonDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  buttonDestroyedSound: {fileID: 8300000, guid: fef707eb0c2623140a570b5ab7c0b1ea, type: 3}
 --- !u!95 &8482114273358778601
 Animator:
   serializedVersion: 7
@@ -146,7 +150,7 @@ GameObject:
   - component: {fileID: 1453810113518130395}
   - component: {fileID: 6570130124939102156}
   - component: {fileID: 1300778668363906392}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Press (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4937,8 +4941,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1567106453
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_RenderMode: 0
@@ -4983,7 +4987,7 @@ GameObject:
   - component: {fileID: 2293629214233892309}
   - component: {fileID: 6872738711599542990}
   - component: {fileID: 6432280899219377061}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Appear_Par (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9782,8 +9786,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1567106453
+  m_SortingLayer: 2
   m_SortingOrder: 17
   m_MaskInteraction: 0
   m_RenderMode: 1
@@ -9827,7 +9831,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2476824907213591104}
   - component: {fileID: 55558284102052226}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sprite_Arriba
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9894,8 +9898,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1567106453
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3619698432328450326, guid: 9f88278ad73f88d4d9690d262d82c1d8, type: 3}
