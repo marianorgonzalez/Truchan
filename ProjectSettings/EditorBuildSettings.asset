@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ContenidoExtra.unity
     guid: 9f6b1694bef3c2d41a23155133496015
+  - enabled: 1
+    path: Assets/Scenes/FinalMalo.unity
+    guid: 17f1ba929fbc8da448ad955d49692a6b
+  - enabled: 1
+    path: Assets/Scenes/FinalBueno.unity
+    guid: 3d31474f14402d74283de77385ee1903
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -7,12 +7,12 @@ public static class Utilities
     return Object.FindObjectsByType<TruchanButton>(FindObjectsSortMode.None);
   }
 
-  public static void DealDamageToPlayer(int damage)
+  public static void DealDamageToPlayer(int damage, bool ignoreInvulnerability = false)
   {
     var playerHealth = Object.FindFirstObjectByType<PlayerHealth>();
     if (playerHealth != null)
     {
-      playerHealth.DealDamage(damage);
+      playerHealth.DealDamage(damage, ignoreInvulnerability);
     }
   }
   public static List<T> PickRandomFromList<T>(List<T> originList, int amountToPick)
@@ -25,5 +25,14 @@ public static class Utilities
         chosenItems.Add(clip);
     }
     return chosenItems;
+  }
+
+  public static void PlaySFX(AudioClip clip, float pitch)
+  {
+    var audioManager = Object.FindFirstObjectByType<AudioManager>();
+    if (audioManager != null)
+    {
+      audioManager.PlaySFX(clip, pitch);
+    }
   }
 }

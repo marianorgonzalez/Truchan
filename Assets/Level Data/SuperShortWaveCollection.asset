@@ -10,18 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bea03c0f5cf6ced4a9f2311572fbdbf0, type: 3}
-  m_Name: ButtonWavesTest
+  m_Name: SuperShortWaveCollection
   m_EditorClassIdentifier: Assembly-CSharp::ButtonWaveCollection
   waves:
   - spawnRandomButtons: 1
-    randomButtonAmount: 8
+    randomButtonAmount: 1
     specificButtons: []
-    timeToPressAllButtons: 8
-    timeUntilNextWave: 2
-    buttonDamage: 1
-  - spawnRandomButtons: 1
-    randomButtonAmount: 3
-    specificButtons: []
-    timeToPressAllButtons: 8
-    timeUntilNextWave: 2
-    buttonDamage: 10
+    timeToPressAllButtons: 100
+    timeUntilNextWave: 0
+    buttonDamage: 0

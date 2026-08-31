@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: TermotanqueLevelData
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   music: {fileID: 8300000, guid: 86cef33476de41d4f99873fce6455d55, type: 3}
-  waves: {fileID: 11400000, guid: 8b1ece4e64b764e4a8d7905b981c9b4b, type: 2}
+  waves: {fileID: 11400000, guid: b76f780ca9abd0242be3456157ea6528, type: 2}
   truchanPrefab: {fileID: 1364778150357362501, guid: 4ce511f8919b68540aa970e559c6718c, type: 3}
   nextLevel: {fileID: 0}

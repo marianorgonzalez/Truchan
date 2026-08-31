@@ -19,12 +19,16 @@ public class WaveSpawner : MonoBehaviour
 
   public IEnumerator SpawnWaveCollection(ButtonWaveCollection waveCollection)
   {
-    foreach (var wave in waveCollection.waves)
+    for (int i = 0; i < waveCollection.waves.Count; i++)
     {
+      var wave = waveCollection.waves[i];    
       SpawnButtonWave(wave);
       yield return new WaitUntil(() => currentWaveButtons.Any() == false);
-      OnWaveFinished?.Invoke();
-      yield return new WaitForSeconds(wave.timeUntilNextWave);
+      if (i != waveCollection.waves.Count - 1)
+      {
+        OnWaveFinished?.Invoke();
+        yield return new WaitForSeconds(wave.timeUntilNextWave);
+      }
     }
     OnWaveCollectionFinished?.Invoke();
   }

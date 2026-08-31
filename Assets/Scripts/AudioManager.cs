@@ -8,6 +8,8 @@ public class AudioManager : MonoBehaviour
   [SerializeField] AudioMixer mixer;
   public void PlayMusic(AudioClip music)
   {
+    if (music == null)
+      return;
     musicSource.clip = music;
     musicSource.loop = true;
     musicSource.Play();
@@ -15,6 +17,15 @@ public class AudioManager : MonoBehaviour
 
   public void PlaySFX(AudioClip clip)
   {
+    if (clip == null)
+      return;
+    sfxSource.PlayOneShot(clip);
+  }
+  public void PlaySFX(AudioClip clip, float pitchModifier)
+  {
+    if (clip == null)
+      return;
+    sfxSource.pitch = pitchModifier;
     sfxSource.PlayOneShot(clip);
   }
 
@@ -55,5 +66,11 @@ public class AudioManager : MonoBehaviour
         : Mathf.Log10(value) * 20f;
 
     mixer.SetFloat(parameter, volume);
+  }
+
+  private void Update()
+  {
+    if (sfxSource.isPlaying == false)
+      sfxSource.pitch = 1;
   }
 }

@@ -50,5 +50,8 @@ TagManager:
   - name: TruchanButtons
     uniqueID: 1567106453
     locked: 0
+  - name: Transitions
+    uniqueID: 2157786627
+    locked: 0
   m_RenderingLayers:
   - Default

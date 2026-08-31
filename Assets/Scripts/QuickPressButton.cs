@@ -4,11 +4,11 @@ using System;
 public class QuickPressButton : TruchanButton
 {
   [SerializeField] int pressAmount = 5;
-  [SerializeField] SpriteRenderer spriteRenderer;
   [SerializeField] Sprite twentyPercentDamageSprite;
   [SerializeField] Sprite fortyPercentDamageSprite;
   [SerializeField] Sprite sixtyPercentDamageSprite;
   [SerializeField] Sprite eightyPercentDamageSprite;
+  [SerializeField] AudioClip damageClip;
   int timesPressed = 0;
 
   private void Awake()
@@ -27,6 +27,9 @@ public class QuickPressButton : TruchanButton
     {
       pressParticle.Play();
       UpdateSprite();
+      var damageAmount = Mathf.InverseLerp(0, pressAmount, timesPressed);
+      var pitchAmount = Mathf.Lerp(1, 2, damageAmount);
+      Utilities.PlaySFX(damageClip, pitchAmount);
     }
   }
 

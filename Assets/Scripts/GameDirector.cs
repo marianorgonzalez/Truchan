@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class GameDirector : MonoBehaviour
 {
-  [SerializeField] List<LevelData> levels;
+  [SerializeField] LevelData firstLevel;
   [SerializeField] GameObject truchanContainer;
   [SerializeField] ButtonDestroyer buttonDestroyer;
   [SerializeField] WaveSpawner waveSpawner;
@@ -12,38 +14,68 @@ public class GameDirector : MonoBehaviour
   [SerializeField] float waitBeforeFirstWave = 3f;
   [SerializeField] AudioClip winMusic;
   [SerializeField] AudioClip loseMusic;
+  [SerializeField] AudioClip winSfx;
+  [SerializeField] AudioClip loseSfx;
+  [SerializeField] UnityEvent OnLevelCompleted;
+  [SerializeField] LevelTransitions transitions;
+  [SerializeField] float timeBetweenLevels = 1.5f;
+  [SerializeField] PlayerHealth health;
   bool levelFinished = false;
   bool playerDied = false;
 
+  private void Awake()
+  {
+    transitions.MakeOverlayOpaque();
+    buttonDestroyer.enabled = false;
+  }
   private void Start()
   {
-    StartCoroutine(ExecuteLevel(levels[0]));
+    StartCoroutine(ExecuteLevel(firstLevel));
   }
+
   IEnumerator ExecuteLevel(LevelData level)
   {
-    audioManager.PlayMusic(level.music);
+    levelFinished = playerDied = false;
+    health.RestoreAllHealth();
+    // Preparacion de objetos del nivel
     if (truchanContainer.transform.childCount > 0)
       Destroy(truchanContainer.transform.GetChild(0).gameObject);
     var truchanPrefab = Instantiate(level.truchanPrefab, truchanContainer.transform);
     var truchanAnimator = truchanPrefab.GetComponent<Animator>();
-    waveSpawner.OnWaveFinished.AddListener(() => truchanAnimator.SetTrigger("reset"));
+    UnityAction resetAction = () => truchanAnimator.SetTrigger("reset");
+    waveSpawner.OnWaveFinished.AddListener(resetAction);
     waveSpawner.OnWaveCollectionFinished.AddListener(OnLevelFinished);
 
+    // transicion y empieza nivel
+    yield return StartCoroutine(transitions.TransitionIn());
+    truchanAnimator.SetBool("start", true);
+    audioManager.PlayMusic(level.music);
     yield return new WaitForSeconds(waitBeforeFirstWave);
+    buttonDestroyer.enabled = true;
     StartCoroutine(waveSpawner.SpawnWaveCollection(level.waves));
+
+    // esperamos a que el jugador gane o pierda
     yield return new WaitUntil(() => levelFinished || playerDied);
+    
+    // limpieza
+    waveSpawner.OnWaveFinished.RemoveListener(resetAction);
+    waveSpawner.OnWaveCollectionFinished.RemoveListener(OnLevelFinished);
+    buttonDestroyer.enabled = false;
+    audioManager.StopAllMusic();
     if (levelFinished)
     {
       truchanAnimator.SetTrigger("win");
-      audioManager.PlayMusic(winMusic);
+      audioManager.PlaySFX(winMusic);
+      audioManager.PlaySFX(winSfx);
       yield return new WaitForSeconds(winMusic.length);
+      yield return StartCoroutine(transitions.TransitionOut());
+      yield return new WaitForSeconds(timeBetweenLevels);
       if (level.nextLevel == null)
       {
-        Debug.Break(); // TODO: IR A CINEMATICA FINAL
+        SceneManager.LoadScene("FinalBueno");
       }
       else
       {
-        // TODO: TRANSICIONAR A PROXIMO NIVEL
         StartCoroutine(ExecuteLevel(level.nextLevel));
       }
     }
@@ -55,12 +87,15 @@ public class GameDirector : MonoBehaviour
       waveSpawner.enabled = false;
       foreach (var button in Utilities.GetAllButtons())
       {
-        button.OnPressed();
+        Destroy(button.gameObject);
       }
-      audioManager.PlayMusic(loseMusic);
+      audioManager.PlaySFX(loseMusic);
+      audioManager.PlaySFX(loseSfx);
       yield return new WaitForSeconds(loseMusic.length);
-      Debug.Break(); // IR A PANTALLA DE DERROTA / FINAL MALO
+      yield return StartCoroutine(transitions.TransitionOut());
+      SceneManager.LoadScene("FinalMalo");
     }
+
   }
   public void OnPlayerDeath()
   {

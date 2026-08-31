@@ -6,24 +6,33 @@ public class TruchanButton : MonoBehaviour
 {
   [SerializeField] public KeyCode keyboardButton;
   [HideInInspector] public float duration;
-  float timeCreated;
+  float durationTimer;
   [HideInInspector] public int damage;
   public Animator anim;
   public ParticleSystem pressParticle;
   public UnityEvent<TruchanButton> OnButtonDestroyed;
   [SerializeField] public AudioClip buttonDestroyedSound;
+  public SpriteRenderer spriteRenderer;
+  bool damageDealt = false;
   private void Awake()
   {
-    timeCreated = Time.time;
+    durationTimer = duration;
     if (anim == null)
       anim = GetComponent<Animator>();
+    if (spriteRenderer == null)
+      spriteRenderer = GetComponent<SpriteRenderer>();
   }
 
   protected virtual void Update()
   {
-    if (Time.time - timeCreated > duration)
+    durationTimer += Time.deltaTime;
+    spriteRenderer.color = Color.Lerp(Color.white, Color.darkRed, Mathf.InverseLerp(0, duration, durationTimer));
+    if (durationTimer > duration && damageDealt == false)
     {
-      Utilities.DealDamageToPlayer(damage);
+      Utilities.DealDamageToPlayer(damage, true);
+      damageDealt = true;
+      Destroy(gameObject);
+      OnButtonDestroyed?.Invoke(this);
     }
   }
   public virtual void OnPressed()

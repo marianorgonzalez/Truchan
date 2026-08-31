@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
-public class IntroController : MonoBehaviour
+public class CutsceneController : MonoBehaviour
 {
   VideoPlayer videoPlayer;
   [SerializeField] string nextScene;

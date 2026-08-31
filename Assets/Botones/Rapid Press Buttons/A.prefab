@@ -123,6 +123,7 @@ MonoBehaviour:
   fortyPercentDamageSprite: {fileID: 3221757492461169263, guid: 1bf4f16ba820ba449b1130fa0df2804f, type: 3}
   sixtyPercentDamageSprite: {fileID: 7133069203297114266, guid: 1bf4f16ba820ba449b1130fa0df2804f, type: 3}
   eightyPercentDamageSprite: {fileID: 5472073384184413159, guid: 1bf4f16ba820ba449b1130fa0df2804f, type: 3}
+  damageClip: {fileID: 8300000, guid: ce4137970fdb2ea41989704e1d7c2228, type: 3}
 --- !u!95 &363383043385310481
 Animator:
   serializedVersion: 7

@@ -6,12 +6,12 @@ public class HoldButton : TruchanButton
   [SerializeField] float timeToHold = 1.2f;
   bool isButtonPressed = false;
   float heldTimer = 0;
-  [SerializeField] SpriteRenderer spriteRenderer;
   [SerializeField] Sprite twentyPercentDamageSprite;
   [SerializeField] Sprite fortyPercentDamageSprite;
   [SerializeField] Sprite sixtyPercentDamageSprite;
   [SerializeField] Sprite eightyPercentDamageSprite;
   [SerializeField] SpriteRenderer outline;
+  bool buttonDestroyed = false;
   private void Awake()
   {
     if (spriteRenderer == null)
@@ -21,6 +21,8 @@ public class HoldButton : TruchanButton
   }
   protected override void Update()
   {
+    if (buttonDestroyed)
+      return;
     if (isButtonPressed)
     {
       if (Input.GetKeyUp(this.keyboardButton))
@@ -33,6 +35,7 @@ public class HoldButton : TruchanButton
       heldTimer += Time.deltaTime;
       if (heldTimer >= timeToHold)
       {
+        buttonDestroyed = true;
         base.OnPressed();
       }
       UpdateSprite();

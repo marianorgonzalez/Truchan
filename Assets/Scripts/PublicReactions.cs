@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,19 +9,22 @@ public class PublicReactions : MonoBehaviour
   [SerializeField] List<AudioClip> negativeReactionSoundEffects;
   [SerializeField] List<AudioClip> begginningSoundEffects;
   [SerializeField] float maxDelay = 0.2f;
-
+  [SerializeField] int minSoundAmmount = 3;
+  [SerializeField] int maxSoundAmmount = 5;
   public void BegginingSounds()
   {
 
   }
+
   public void PositiveReaction()
   {
-    PlayRandomSFXFromRandomPositions(positiveReactionSoundEffects, Random.Range(1, 4));
+    PlayRandomSFXFromRandomPositions(positiveReactionSoundEffects, Random.Range(minSoundAmmount, maxSoundAmmount));
   }
   public void NegativeReaction()
   {
-    PlayRandomSFXFromRandomPositions(negativeReactionSoundEffects, Random.Range(1, 4));
+    PlayRandomSFXFromRandomPositions(negativeReactionSoundEffects, Random.Range(minSoundAmmount, maxSoundAmmount));
   }
+
 
   private void PlayRandomSFXFromRandomPositions(List<AudioClip> sfx, int clipsToPlay)
   {
@@ -28,8 +32,13 @@ public class PublicReactions : MonoBehaviour
     List<AudioSource> chosenSources = Utilities.PickRandomFromList(audioSources, clipsToPlay);
     for (int i = 0; i < clipsToPlay; i++)
     {
-      chosenSources[i].clip = chosenClips[i];
-      chosenSources[i].PlayDelayed(Random.Range(0, maxDelay));
+      StartCoroutine(PlayDelayedOneshot(chosenSources[i], chosenClips[i], Random.Range(0, maxDelay)));
     }
+  }
+
+  private IEnumerator PlayDelayedOneshot(AudioSource source, AudioClip clip, float delay)
+  {
+    yield return new WaitForSeconds(delay);
+    source.PlayOneShot(clip);
   }
 }

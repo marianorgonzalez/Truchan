@@ -15,33 +15,38 @@ public class PlayerHealth : MonoBehaviour
   [SerializeField] float damagePortraitDuration = 1f;
   [SerializeField] UnityEvent OnDeath;
   [SerializeField] UnityEvent OnDamageTaken;
+  [SerializeField] float invulnerabilityTime = 1f;
   int currentHealth;
-  float lastDamageTime = Mathf.NegativeInfinity;
+  float invulTimer = 0;
 
   private void Awake()
   {
+    invulTimer = invulnerabilityTime;
     currentHealth = maxHealth;
   }
   private void Update()
   {
+    invulTimer += Time.deltaTime;
     UpdateHealthUI();
   }
 
-  public void DealDamage(int damage)
+  public void DealDamage(int damage, bool ignoreInvulnerability = false)
   {
+    if (ignoreInvulnerability == false && invulTimer < invulnerabilityTime)
+      return;
     currentHealth -= damage;
     currentHealth = Math.Max(currentHealth, 0);
-    lastDamageTime = Time.time;
+    invulTimer = 0;
     if (currentHealth == 0)
       OnDeath?.Invoke();
-    else
+    else if (invulTimer > invulnerabilityTime)
       OnDamageTaken?.Invoke();
   }
 
   private void UpdateHealthUI()
   {
     healthBar.fillAmount = Mathf.InverseLerp(0, maxHealth, currentHealth);
-    if (Time.time - lastDamageTime < damagePortraitDuration)
+    if (invulTimer < invulnerabilityTime)
     {
       portrait.sprite = damagedSprite;
     }
@@ -57,5 +62,10 @@ public class PlayerHealth : MonoBehaviour
     {
       portrait.sprite = deathSprite;
     }
+  }
+
+  public void RestoreAllHealth()
+  {
+    currentHealth = maxHealth;
   }
 }
