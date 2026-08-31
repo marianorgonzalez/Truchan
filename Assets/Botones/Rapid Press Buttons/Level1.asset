@@ -16,14 +16,14 @@ MonoBehaviour:
   - spawnRandomButtons: 0
     randomButtonAmount: 3
     specificButtons:
-    - {fileID: 3718884878970708261, guid: 5a9ff1d11ca83b149baf18cce1b968c4, type: 3}
-    - {fileID: -5437069840104535164, guid: d04a9690d54628e49818353dfc17497c, type: 3}
-    - {fileID: 1908900682063231468, guid: 71f4b6640ee01e6448524b716ea74214, type: 3}
-    - {fileID: 6211608272771149748, guid: 69fd8cc9d84cb704386d25ce1e025d7d, type: 3}
-    - {fileID: 8147583261433092350, guid: afcd8639a44d16a4cb4a5c01c8680b17, type: 3}
-    - {fileID: 4051435033717548654, guid: fb128cc8c483d554eb9260a14c7e9507, type: 3}
-    - {fileID: 3724920773012655376, guid: dec74cdc5881b7b4ea3ab1266d0d497e, type: 3}
-    - {fileID: 6764569583621466023, guid: acfbe509745511c4a94fd1a334efee65, type: 3}
+    - {fileID: 2109547399368080924, guid: 0c2bd31c6faa2a54abd2eeb9310667f5, type: 3}
+    - {fileID: 1635993500215254783, guid: 0f6991c83162c734da450f32f9d802d5, type: 3}
+    - {fileID: 3985290217875742779, guid: 2831d02939d74b24984fbcb490b7368c, type: 3}
+    - {fileID: 1227074329929122346, guid: 6dc339c73bfabf64bb87fd11151d6df8, type: 3}
+    - {fileID: 6599141592441422990, guid: 17aaa1b9875ca034e8c54e61580ecc40, type: 3}
+    - {fileID: -8245994370285417710, guid: a234643b62da01443aa169d8782894cb, type: 3}
+    - {fileID: -687658180851971694, guid: e88687adc98e94c49b9c3c49471e756f, type: 3}
+    - {fileID: 8680230498560170702, guid: 17e2c08a8318fbc49ab9f86f6d5ead3c, type: 3}
     timeToPressAllButtons: 12
     timeUntilNextWave: 6
     buttonDamage: 10
