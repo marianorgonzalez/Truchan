@@ -1,0 +1,962 @@
+fileFormatVersion: 2
+guid: 5e9d331062efd5f4b8a9416fb320ffe6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5940908765616355607
+    second: Truchan_0
+  - first:
+      213: -8666209407576421892
+    second: Truchan_1
+  - first:
+      213: 4430646786794252131
+    second: Truchan_2
+  - first:
+      213: 1725009058274431544
+    second: Truchan_3
+  - first:
+      213: 6909885780060931097
+    second: Truchan_4
+  - first:
+      213: 6367622308454051176
+    second: Truchan_5
+  - first:
+      213: -5637433525851666133
+    second: Truchan_6
+  - first:
+      213: -5009578090828314616
+    second: Truchan_7
+  - first:
+      213: -6828902412031427669
+    second: Truchan_8
+  - first:
+      213: 6161977839285909193
+    second: Truchan_9
+  - first:
+      213: 336322281899314980
+    second: Truchan_10
+  - first:
+      213: 115208992541651497
+    second: Truchan_11
+  - first:
+      213: -7449023797439658355
+    second: Truchan_12
+  - first:
+      213: 7339334288587124361
+    second: Truchan_13
+  - first:
+      213: -8939366822512828907
+    second: Truchan_14
+  - first:
+      213: 4597159850128045300
+    second: Truchan_15
+  - first:
+      213: -9186330820902046533
+    second: Truchan_16
+  - first:
+      213: -7495464100447329097
+    second: Truchan_17
+  - first:
+      213: 8293076282401547050
+    second: Truchan_18
+  - first:
+      213: 8644122829862186518
+    second: Truchan_19
+  - first:
+      213: 2239897872791235645
+    second: Truchan_20
+  - first:
+      213: 4391282152534765336
+    second: Truchan_21
+  - first:
+      213: 414939772918641153
+    second: Truchan_22
+  - first:
+      213: -53206033297936958
+    second: Truchan_23
+  - first:
+      213: 7870400930782409936
+    second: Truchan_24
+  - first:
+      213: -8699991987602705177
+    second: Truchan_25
+  - first:
+      213: -6175751001504865303
+    second: Truchan_26
+  - first:
+      213: -114272874799712956
+    second: Truchan_27
+  - first:
+      213: -1352999886764457720
+    second: Truchan_28
+  - first:
+      213: -6383586904717798647
+    second: Truchan_29
+  - first:
+      213: -4927221774463352188
+    second: Truchan_30
+  - first:
+      213: 7871864721714080431
+    second: Truchan_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Truchan_0
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 1061
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7193199cb09527250800000000000000
+      internalID: 5940908765616355607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_1
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 886
+        width: 30
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf9424895707bb780800000000000000
+      internalID: -8666209407576421892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_2
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 890
+        width: 43
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 367e81c27c1dc7d30800000000000000
+      internalID: 4430646786794252131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_3
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 891
+        width: 43
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83257c8599670f710800000000000000
+      internalID: 1725009058274431544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_4
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 888
+        width: 29
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9140e0fb188d4ef50800000000000000
+      internalID: 6909885780060931097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_5
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 709
+        width: 312
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86da14f90c65e5850800000000000000
+      internalID: 6367622308454051176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_6
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 1063
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b29cbbe9310d3c1b0800000000000000
+      internalID: -5637433525851666133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 707
+        width: 313
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 808499da4476a7ab0800000000000000
+      internalID: -5009578090828314616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_8
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 1687
+        height: 922
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: babfe05ff6dda31a0800000000000000
+      internalID: -6828902412031427669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_9
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 896
+        width: 80
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c63770823eb38550800000000000000
+      internalID: 6161977839285909193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_10
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 913
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42f48ae555bdaa400800000000000000
+      internalID: 336322281899314980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_11
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 897
+        width: 79
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9223063e7fd499100800000000000000
+      internalID: 115208992541651497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_12
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 877
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d868d26a250cf9890800000000000000
+      internalID: -7449023797439658355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_13
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 879
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98e641766ad8ad560800000000000000
+      internalID: 7339334288587124361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 547
+        width: 159
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51ed53bdc3df0f380800000000000000
+      internalID: -8939366822512828907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_15
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 574
+        width: 158
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f4f192e6846ccf30800000000000000
+      internalID: 4597159850128045300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_16
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 554
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb439e62ac8938080800000000000000
+      internalID: -9186330820902046533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_17
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 557
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b4e4220d13caf790800000000000000
+      internalID: -7495464100447329097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_18
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 416
+        width: 54
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a23e2c3b0fce61370800000000000000
+      internalID: 8293076282401547050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_19
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 419
+        width: 54
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61ea7cc4ae716f770800000000000000
+      internalID: 8644122829862186518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 368
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3cefd07f37b51f10800000000000000
+      internalID: 2239897872791235645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_21
+      rect:
+        serializedVersion: 2
+        x: 1908
+        y: 371
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81fe85a0ad7f0fc30800000000000000
+      internalID: 4391282152534765336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_22
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 313
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1023ff7668922c500800000000000000
+      internalID: 414939772918641153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_23
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 326
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cd6e550569f24ff0800000000000000
+      internalID: -53206033297936958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_24
+      rect:
+        serializedVersion: 2
+        x: 1831
+        y: 328
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d4703782f7493d60800000000000000
+      internalID: 7870400930782409936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_25
+      rect:
+        serializedVersion: 2
+        x: 1885
+        y: 315
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e4323eb16b634780800000000000000
+      internalID: -8699991987602705177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_26
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 280
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e32a064f235b4aa0800000000000000
+      internalID: -6175751001504865303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_27
+      rect:
+        serializedVersion: 2
+        x: 1873
+        y: 283
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 445b9120d650a6ef0800000000000000
+      internalID: -114272874799712956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_28
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 87
+        width: 84
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 801c24085cd293de0800000000000000
+      internalID: -1352999886764457720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_29
+      rect:
+        serializedVersion: 2
+        x: 1779
+        y: 89
+        width: 94
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 903d5772881f867a0800000000000000
+      internalID: -6383586904717798647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_30
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 0
+        width: 128
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 482ca83d6edfe9bb0800000000000000
+      internalID: -4927221774463352188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truchan_31
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 0
+        width: 134
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faa62b9e14b7e3d60800000000000000
+      internalID: 7871864721714080431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Truchan_0: 5940908765616355607
+      Truchan_1: -8666209407576421892
+      Truchan_10: 336322281899314980
+      Truchan_11: 115208992541651497
+      Truchan_12: -7449023797439658355
+      Truchan_13: 7339334288587124361
+      Truchan_14: -8939366822512828907
+      Truchan_15: 4597159850128045300
+      Truchan_16: -9186330820902046533
+      Truchan_17: -7495464100447329097
+      Truchan_18: 8293076282401547050
+      Truchan_19: 8644122829862186518
+      Truchan_2: 4430646786794252131
+      Truchan_20: 2239897872791235645
+      Truchan_21: 4391282152534765336
+      Truchan_22: 414939772918641153
+      Truchan_23: -53206033297936958
+      Truchan_24: 7870400930782409936
+      Truchan_25: -8699991987602705177
+      Truchan_26: -6175751001504865303
+      Truchan_27: -114272874799712956
+      Truchan_28: -1352999886764457720
+      Truchan_29: -6383586904717798647
+      Truchan_3: 1725009058274431544
+      Truchan_30: -4927221774463352188
+      Truchan_31: 7871864721714080431
+      Truchan_4: 6909885780060931097
+      Truchan_5: 6367622308454051176
+      Truchan_6: -5637433525851666133
+      Truchan_7: -5009578090828314616
+      Truchan_8: -6828902412031427669
+      Truchan_9: 6161977839285909193
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
