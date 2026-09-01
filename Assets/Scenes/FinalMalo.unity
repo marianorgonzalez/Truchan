@@ -353,9 +353,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   nextScene: MainMenu
-  timeToSkip: 2
+  timeToSkip: 1
   skipText: {fileID: 1780700836}
-  timeToHideSkipTextAfterShowing: 4
+  timeToHideSkipTextAfterShowing: 1.5
+  canReset: 1
 --- !u!82 &1553024406
 AudioSource:
   m_ObjectHideFlags: 0
@@ -488,7 +489,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -27.340027, y: 0}
-  m_SizeDelta: {x: 940.27, y: 77.57}
+  m_SizeDelta: {x: 1854.2, y: 63.55}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1780700836
 MonoBehaviour:
@@ -510,7 +511,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Manten pulsado "S" para saltear
+  m_text: Manten pulsado R para Resetear / Manten pulsado "S" para saltear
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -537,14 +538,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56
-  m_fontSizeBase: 56
+  m_fontSize: 53.33
+  m_fontSizeBase: 53.33
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 4
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0

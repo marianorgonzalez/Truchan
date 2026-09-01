@@ -353,9 +353,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   nextScene: MainScene
-  timeToSkip: 2
+  timeToSkip: 1
   skipText: {fileID: 1780700836}
-  timeToHideSkipTextAfterShowing: 4
+  timeToHideSkipTextAfterShowing: 1.5
 --- !u!82 &1553024406
 AudioSource:
   m_ObjectHideFlags: 0
