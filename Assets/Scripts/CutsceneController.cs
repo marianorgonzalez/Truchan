@@ -31,7 +31,7 @@ public class CutsceneController : MonoBehaviour
     if (Input.GetKey(KeyCode.S))
     {
       skipTimer += Time.deltaTime;
-    }if (Input.GetKey(KeyCode.R) && canReset)
+    }else if (Input.GetKey(KeyCode.R) && canReset)
         {
             resetTimer += Time.deltaTime;
         }

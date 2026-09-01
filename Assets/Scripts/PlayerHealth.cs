@@ -19,6 +19,8 @@ public class PlayerHealth : MonoBehaviour
   int currentHealth;
   float invulTimer = 0;
 
+    [SerializeField] Public spectators;
+
   private void Awake()
   {
     invulTimer = invulnerabilityTime;
@@ -36,6 +38,7 @@ public class PlayerHealth : MonoBehaviour
       return;
     currentHealth -= damage;
     currentHealth = Math.Max(currentHealth, 0);
+        spectators.SetPublics(currentHealth, maxHealth);
     invulTimer = 0;
     if (currentHealth == 0)
       OnDeath?.Invoke();
@@ -67,5 +70,6 @@ public class PlayerHealth : MonoBehaviour
   public void RestoreAllHealth()
   {
     currentHealth = maxHealth;
+        spectators.AllDissapear();
   }
 }
