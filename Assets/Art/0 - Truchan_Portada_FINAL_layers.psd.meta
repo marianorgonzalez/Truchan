@@ -100,50 +100,6 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   multiSpriteImportData: []
   layeredSpriteImportData:
-  - name: TRUCHAN
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 2180
-      width: 1607
-      height: 463
-    spriteID: fe010f1c00e46bc45be07ab056e3fc4b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 2180}
-    spritePosition: {x: 155, y: 546}
-  - name: PUEDE FALLAR
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 478
-      y: 2651
-      width: 1136
-      height: 157
-    spriteID: 769ec74fd051f3e41b30f44d1bd47106
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 478, y: 2651}
-    spritePosition: {x: 399, y: 136}
   - name: Truchan
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -175,7 +131,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 2651
+      y: 2180
       width: 466
       height: 538
     spriteID: 211bed95fd93c33449e39346767d65c0
@@ -186,7 +142,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 2651}
+    uvTransform: {x: 4, y: 2180}
     spritePosition: {x: 868, y: 187}
   - name: Fondo
     originalName: 
@@ -232,10 +188,10 @@ ScriptedImporter:
   - name: DefaultTexturePlatform
     overridden: 0
     ignorePlatformSupport: 0
-    maxTextureSize: 8192
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     forceMaximumCompressionQuality_BC6H_BC7: 0
     crunchedCompression: 0
@@ -291,7 +247,19 @@ ScriptedImporter:
     categories: []
   spritePackingTag: 
   resliceFromLayer: 0
-  pSDLayerImportSetting: []
+  pSDLayerImportSetting:
+  - spriteId: fe010f1c00e46bc45be07ab056e3fc4b
+    name: TRUCHAN
+    layerId: 53
+    flatten: 0
+    isGroup: 0
+    importLayer: 0
+  - spriteId: 769ec74fd051f3e41b30f44d1bd47106
+    name: PUEDE FALLAR
+    layerId: 55
+    flatten: 0
+    isGroup: 0
+    importLayer: 0
   psdLayers:
   - name: TRUCHAN
     spriteName: TRUCHAN
@@ -301,7 +269,7 @@ ScriptedImporter:
     layerID: 53
     mosaicPosition: {x: 4, y: 2180}
     flatten: 0
-    isImported: 1
+    isImported: 0
     isVisible: 1
   - name: PUEDE FALLAR
     spriteName: PUEDE FALLAR
@@ -311,7 +279,7 @@ ScriptedImporter:
     layerID: 55
     mosaicPosition: {x: 478, y: 2651}
     flatten: 0
-    isImported: 1
+    isImported: 0
     isVisible: 1
   - name: Truchan
     spriteName: Truchan
@@ -329,7 +297,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 211bed95fd93c33449e39346767d65c0
     layerID: 25
-    mosaicPosition: {x: 4, y: 2651}
+    mosaicPosition: {x: 4, y: 2180}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -347,7 +315,7 @@ ScriptedImporter:
   rigPSDLayers: []
   sharedRigPSDLayers: []
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639237789558032032
+  platformSettingsDirtyTick: 639238143967314831
   spriteSizeExpandChanged: 0
   generateGOHierarchy: 0
   textureAssetName: 
